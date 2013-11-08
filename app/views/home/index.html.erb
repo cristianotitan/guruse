@@ -1,0 +1,10 @@
+<% @meetings.each do |m| %>
+<ul class="list-unstyled">
+  <li><h3><%= content_tag(:i, nil, class: "fa fa-map-marker") + " #{m.place}" %> <small><%= m.address %></small></h3></li>
+  <li><h5><%= content_tag(:i, nil, class: "fa fa-calendar") + " #{l m.dt_meeting}" %></h5>
+  <li><h5><%= content_tag(:i, nil, class: "fa fa-clock-o") + " #{m.time_meeting.strftime("%H:%M")}" %></h5>
+  <li>
+  <%= image_tag("http://maps.google.com/maps/api/staticmap?size=800x300&sensor=false&zoom=16&markers=#{m.latitude}%2C#{m.longitude}") %>
+  </li>
+</ul>
+<%end%>

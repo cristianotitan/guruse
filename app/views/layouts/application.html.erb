@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guruse</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+  <div class="navbar navbar-inverse navbar-static navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to(image_tag("logo_m.png"), root_path, class: "navbar-brand") %>
+      </div>
+      <div class="navbar-collapse collapse bs-js-navbar-scrollspy" data-offset="200">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to("Encontros", meetings_path) %></li>
+          <li><a href="#anchor02" class="menu">Eventos</a></li>
+          <li><a href="#anchor03" class="menu">Projetos</a></li>
+          <li><a href="#anchor04" class="menu">Parceiros</a></li>
+          <li><a href="#anchor05" class="menu">Sobre Nós</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-muted credit">
+    Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+  </div>
+</div>
+</body>
+</html>

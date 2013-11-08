@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  address: MyString
+  dt_meeting: 2013-11-08
+  time_meeting: 2013-11-08 18:16:46
+  latitude: 1.5
+  longitude: 1.5
+  place: MyString
+
+two:
+  address: MyString
+  dt_meeting: 2013-11-08
+  time_meeting: 2013-11-08 18:16:46
+  latitude: 1.5
+  longitude: 1.5
+  place: MyString

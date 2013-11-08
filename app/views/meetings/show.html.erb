@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=800x400&sensor=false&zoom=16&markers=#{@meeting.latitude}%2C#{@meeting.longitude}" %>
+<p>
+<strong>Address:</strong>
+<%= @meeting.address %>
+</p>
+
+<p>
+<strong>Dt meeting:</strong>
+<%= @meeting.dt_meeting %>
+</p>
+
+<p>
+<strong>Time meeting:</strong>
+<%= @meeting.time_meeting %>
+</p>
+
+<p>
+<strong>Latitude:</strong>
+<%= @meeting.latitude %>
+</p>
+
+<p>
+<strong>Longitude:</strong>
+<%= @meeting.longitude %>
+</p>
+
+<p>
+<strong>Place:</strong>
+<%= @meeting.place %>
+</p>
+
+<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
+<%= link_to 'Back', meetings_path %>
