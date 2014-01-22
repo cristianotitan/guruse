@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: guruse_development
+  pool: 5
+  host: localhost
+  username: user
+  password: password
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: guruse_teste
+  pool: 5
+  host: localhost
+  username: user
+  password: password
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: guruse_production
+  pool: 5
+  host: localhost
+  username: user
+  password: password
+
